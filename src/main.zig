@@ -11,6 +11,7 @@ pub fn main() !void {
     defer a_chunk.deinit();
 
     try a_chunk.write(chunk.OpCode.Return);
+    a_chunk.disassemble("test chunk");
 }
 
 test "simple test" {
